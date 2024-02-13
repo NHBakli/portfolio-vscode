@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap");
+
+:root {
+  --bg: #24292e;
+  --titlebarBg: #1f2428;
+  --accent-color: #f9826c;
+  --bottombar-hover-bg: #4f4f52;
+  --bottombar-bg: #24292e;
+  --bottombar-border: #1b1f23;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--bg);
+}

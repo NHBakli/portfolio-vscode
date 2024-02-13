@@ -1,0 +1,70 @@
+.titlebar {
+  background: var(--titlebarBg);
+  height: 30px;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #191d20;
+}
+
+.titlebarIcons {
+  padding: 0;
+}
+
+.titlebarItems {
+  flex: 1;
+  display: flex;
+  margin-right: auto;
+  margin-left: 0.5rem;
+}
+
+.titlebarTitle {
+  flex: 1;
+  text-align: center;
+}
+
+.titlebarItems > * {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.titlebarButtons {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.titlebarButtons * {
+  margin-left: 0.5rem;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.titlebarYellow {
+  background: #f1fa8c;
+  margin-left: auto;
+}
+
+.titlebarGreen {
+  background: #50fa7b;
+}
+
+.titlebarRed {
+  background: #ff5555;
+}
+
+@media screen and (max-width: 900px) {
+  .titlebarItems p {
+    display: none;
+  }
+  .titlebarTitle {
+    flex: 4;
+  }
+}
