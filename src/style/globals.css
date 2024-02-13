@@ -2,11 +2,16 @@
 
 :root {
   --bg: #24292e;
+  --sidebar-bg: #24292e;
+  --sidebar-hover-bg: #1f2428;
   --titlebarBg: #1f2428;
   --accent-color: #f9826c;
   --bottombar-hover-bg: #4f4f52;
   --bottombar-bg: #24292e;
   --bottombar-border: #1b1f23;
+  --explorer-bg: #1f2428;
+  --explorer-hover-bg: #24292e;
+  --explorer-border: #161a1d;
 }
 
 *,

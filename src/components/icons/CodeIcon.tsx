@@ -1,18 +1,18 @@
 type props = {};
 
-const FilesIcon = (props: props) => {
+const CodeIcon = (props: props) => {
   return (
     <svg
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
+      width={16}
+      height={16}
+      viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
       {...props}
     >
-      <path d="M17.5 0h-9L7 1.5V6H2.5L1 7.5v15.07L2.5 24h12.07L16 22.57V18h4.7l1.3-1.43V4.5L17.5 0zm0 2.12l2.38 2.38H17.5V2.12zm-3 20.38h-12v-15H7v9.07L8.5 18h6v4.5zm6-6h-12v-15H16V6h4.5v10.5z" />
+      <path d="M4.708 5.578L2.061 8.224l2.647 2.646-.708.708-3-3V7.87l3-3 .708.708zm7-.708L11 5.578l2.647 2.646L11 10.87l.708.708 3-3V7.87l-3-3zM4.908 13l.894.448 5-10L9.908 3l-5 10z" />
     </svg>
   );
 };
 
-export default FilesIcon;
+export default CodeIcon;

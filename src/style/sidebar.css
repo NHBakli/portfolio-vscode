@@ -1,5 +1,5 @@
 .sidebar {
-  background: var(--titlebarBg);
+  background: var(--sidebar-bg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,6 +19,11 @@
   display: block;
   margin: 0 auto;
   color: rgb(106, 115, 125);
+}
+
+.icon {
+  cursor: pointer;
+  width: 100% !important;
 }
 
 @media screen and (min-width: 2000px) {
