@@ -1,3 +1,4 @@
+"use client";
 import GithubIcon from "./icons/GithubIcon";
 import FilesIcon from "./icons/FilesIcon";
 import CodeIcon from "./icons/CodeIcon";
@@ -5,39 +6,80 @@ import PencilIcon from "./icons/PencilIcon";
 import MailIcon from "./icons/MailIcon";
 import AccountIcon from "./icons/AccountIcon";
 import SettingsIcon from "./icons/SettingsIcon";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import "../style/sidebar.css";
 
-const Sidebar = () => {
+const sidebarTopItems = [
+  {
+    Icon: FilesIcon,
+    path: "/",
+  },
+  {
+    Icon: GithubIcon,
+    path: "/github",
+  },
+  {
+    Icon: CodeIcon,
+    path: "/projects",
+  },
+  {
+    Icon: PencilIcon,
+    path: "/articles",
+  },
+  {
+    Icon: MailIcon,
+    path: "/contact",
+  },
+];
+
+const sidebarBottomItems = [
+  {
+    Icon: AccountIcon,
+    path: "/about",
+  },
+  {
+    Icon: SettingsIcon,
+    path: "/settings",
+  },
+];
+
+export default function Sidebar() {
+  const pathname = usePathname();
   return (
     <aside className="sidebar">
       <div className="containerTop">
-        <Link className="icon" href="#">
-          <FilesIcon />
-        </Link>
-        <Link className="icon" href="#">
-          <GithubIcon />
-        </Link>
-        <Link className="icon" href="#">
-          <CodeIcon />
-        </Link>
-        <Link className="icon" href="#">
-          <PencilIcon />
-        </Link>
-        <Link className="icon" href="#">
-          <MailIcon />
-        </Link>
+        {sidebarTopItems.map(({ Icon, path }) => (
+          <Link href={path} key={path} className="icon">
+            <div
+              className={`iconContainer ${pathname === path ? "active" : ""}`}
+            >
+              <Icon
+                fill={
+                  pathname === path
+                    ? "rgb(225, 228, 232)"
+                    : "rgb(106, 115, 125)"
+                }
+              />
+            </div>
+          </Link>
+        ))}
       </div>
       <div className="containerBottom">
-        <Link className="icon" href="#">
-          <AccountIcon />
-        </Link>
-        <Link className="icon" href="#">
-          <SettingsIcon />
-        </Link>
+        {sidebarBottomItems.map(({ Icon, path }) => (
+          <div className="iconContainer" key={path}>
+            <Link href={path} className="icon">
+              <Icon
+                fill={
+                  pathname === path
+                    ? "rgb(225, 228, 232)"
+                    : "rgb(106, 115, 125)"
+                }
+              />
+            </Link>
+          </div>
+        ))}
       </div>
     </aside>
   );
-};
-
-export default Sidebar;
+}

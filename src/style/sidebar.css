@@ -21,9 +21,17 @@
   color: rgb(106, 115, 125);
 }
 
-.icon {
+.files a {
+  text-decoration: none;
+}
+
+.iconContainer {
   cursor: pointer;
-  width: 100% !important;
+  width: 100%;
+}
+
+.iconContainer:hover {
+  background: var(--sidebar-hover-bg);
 }
 
 @media screen and (min-width: 2000px) {

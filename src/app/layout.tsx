@@ -6,11 +6,12 @@ import ExplorerBar from "@/components/explorerbar";
 import Bottombar from "@/components/bottombar";
 import "../style/layout.css";
 import "../style/globals.css";
+import Tabsbar from "@/components/tabsbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NHBakli",
+  title: `NHBakli`,
   description: "Portfolio create by NHBakli",
 };
 
@@ -26,10 +27,12 @@ export default function RootLayout({
         <div className="main">
           <Sidebar />
           <ExplorerBar />
-          <div style={{ width: "100%" }}>{/* <Tabsbar /> */}</div>
-          <main id="main-editor" className="content">
-            {children}
-          </main>
+          <div style={{ width: "100%" }}>
+            <Tabsbar />
+            <main id="main-editor" className="content">
+              {children}
+            </main>
+          </div>
         </div>
         <Bottombar />
       </body>

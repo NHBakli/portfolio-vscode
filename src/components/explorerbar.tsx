@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -46,7 +45,7 @@ const explorerItems: ExplorerItem[] = [
   },
 ];
 
-const ExplorerBar = () => {
+export default function ExplorerBar() {
   const [portfolioOpen, setPortfolioOpen] = useState(true);
 
   return (
@@ -80,7 +79,7 @@ const ExplorerBar = () => {
                   height={18}
                   width={18}
                 />{" "}
-                <p>{item.name}</p>
+                <div className="p">{item.name}</div>
               </div>
             </Link>
           ))}
@@ -88,6 +87,4 @@ const ExplorerBar = () => {
       </div>
     </div>
   );
-};
-
-export default ExplorerBar;
+}

@@ -12,6 +12,10 @@
   --explorer-bg: #1f2428;
   --explorer-hover-bg: #24292e;
   --explorer-border: #161a1d;
+  --tabs-bg: #1f2428;
+  --tab-bg: #1f2428;
+  --tab-active-bg: #24292e;
+  --tab-border: #24292e;
 }
 
 *,

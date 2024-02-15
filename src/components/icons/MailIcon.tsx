@@ -1,4 +1,6 @@
-type props = {};
+type props = {
+  fill: string;
+};
 
 const MailIcon = (props: props) => {
   return (
@@ -7,7 +9,6 @@ const MailIcon = (props: props) => {
       height={16}
       viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
-      fill="currentColor"
       {...props}
     >
       <path

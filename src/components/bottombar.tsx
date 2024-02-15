@@ -10,7 +10,7 @@ import "../style/footer.css";
 
 type Props = {};
 
-const Bottombar = (props: Props) => {
+export default function Bottombar(props: Props) {
   return (
     <footer className="bottomBar">
       <div className="bottomBarcontainer">
@@ -44,6 +44,4 @@ const Bottombar = (props: Props) => {
       </div>
     </footer>
   );
-};
-
-export default Bottombar;
+}
