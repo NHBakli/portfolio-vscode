@@ -1,9 +1,9 @@
 import "../../style/about.css";
-import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="container">
+    <div className="containerAbout">
+      <div className="imageFilter"></div>
       <div className="containertext">
         <div className="textWithImage">
           <div className="textContainer">
@@ -25,13 +25,6 @@ export default function AboutPage() {
               experience and skills while advancing in my studies.
             </h3>
           </div>
-          <Image
-            src="/bakli.png"
-            alt="bakli"
-            width={300}
-            height={300}
-            className="bakli"
-          />
         </div>
       </div>
     </div>

@@ -1,34 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
-h3 {
-  width: 90%;
-  color: #eee;
-  font-size: 1.2rem;
-  font-weight: 300;
-  margin-top: 3rem;
-  text-align: left;
-}
-.container {
+.containerAbout {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 75vh;
+  background-image: url("/bakli.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  position: relative;
+}
+
+.imageFilter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
 }
 
 .containertext {
   display: flex;
   flex-direction: column;
-}
-
-.textWithImage {
-  display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .textContainer {
-  margin-left: 20px;
+  width: 90%;
+  padding: 2rem;
 }
 
-.bakli {
-  width: 20%;
-  height: 30vh;
+h3 {
+  color: #eee;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 2000px) {
+  h3 {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .containerAbout {
+    background-size: 60%;
+  }
+  h3 {
+    margin-top: 1.5em;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  .containerAbout {
+    background-size: 70%;
+  }
+  h3 {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  h3 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .containerAbout {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .containerAbout {
+    height: 130vh;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .containerAbout {
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .containerAbout {
+    height: 180vh;
+  }
 }

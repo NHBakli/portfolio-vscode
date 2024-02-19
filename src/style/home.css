@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
-.container {
+.containerHome {
   display: flex;
   justify-content: center;
   height: 75vh;
@@ -136,7 +136,7 @@
   .background {
     display: none;
   }
-  .container {
+  .containerHome {
     display: block;
   }
   .foreground {
@@ -179,7 +179,7 @@
 }
 
 @media screen and (orientation: landscape) and (max-width: 1050px) {
-  .container {
+  .containerHome {
     display: flex;
   }
   .illustration {

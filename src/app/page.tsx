@@ -3,7 +3,7 @@ import "../style/home.css";
 
 export default function HomePage() {
   return (
-    <div className="container">
+    <div className="containerHome">
       <div className="background">
         <h1>
           French <br />
