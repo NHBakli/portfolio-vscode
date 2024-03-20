@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "../style/home.css";
+import "../../style/home.css";
 
 export default function HomePage() {
   return (

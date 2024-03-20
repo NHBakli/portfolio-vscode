@@ -33,7 +33,7 @@
   padding: 2rem;
 }
 
-h3 {
+.presentation_text {
   color: #eee;
   font-size: 1.2rem;
   font-weight: 300;
@@ -42,14 +42,14 @@ h3 {
 }
 
 @media screen and (min-width: 2000px) {
-  h3 {
+  .presentation_text {
     font-size: 3rem;
     margin-top: 5rem;
   }
 }
 
 @media screen and (min-width: 1100px) {
-  h3 {
+  .presentation_text {
     font-size: 1.1rem;
     margin-top: 2rem;
   }
@@ -59,7 +59,7 @@ h3 {
   .containerAbout {
     background-size: 60%;
   }
-  h3 {
+  .presentation_text {
     margin-top: 1.5em;
   }
 }
@@ -68,13 +68,13 @@ h3 {
   .containerAbout {
     background-size: 70%;
   }
-  h3 {
+  .presentation_text {
     margin-top: 1em;
   }
 }
 
 @media screen and (max-width: 701px) {
-  h3 {
+  .presentation_text {
     margin-top: 0;
   }
 }
