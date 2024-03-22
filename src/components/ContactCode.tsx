@@ -1,39 +1,33 @@
+import { useEffect, useState } from "react";
 import styles from "../style/ContactCode.module.css";
 
-const contactItems = [
-  {
-    social: "website",
-    link: "nhbakli.me",
-    href: "https://nhbakli.me",
-  },
-  {
-    social: "email",
-    link: "clementhamimi@gmail.com",
-    href: "mailto:clementhamimi@gmail.com",
-  },
-  {
-    social: "github",
-    link: "nhbakli",
-    href: "https://github.com/nhbakli",
-  },
-  {
-    social: "linkedin",
-    link: "Clément Hamimi",
-    href: "https://www.linkedin.com/in/Clément-Hamimi/",
-  },
-  {
-    social: "twitter",
-    link: "NHBakli",
-    href: "https://www.twitter.com/nhbakli",
-  },
-  {
-    social: "instagram",
-    link: "NHBakli",
-    href: "https://www.instagram.com/nhbakli",
-  },
-];
+type ContactItem = {
+  social: string;
+  href: string;
+  link: string;
+};
 
 const ContactCode = () => {
+  const [contactItems, setContactItems] = useState<ContactItem[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/api/link");
+        const data = await response.json();
+        setContactItems(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (contactItems.length === 0) {
+    return "No Link found !";
+  }
+
   return (
     <div className={styles.code}>
       <p className={styles.line}>

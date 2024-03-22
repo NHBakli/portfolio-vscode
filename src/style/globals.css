@@ -36,3 +36,109 @@ body {
   overflow-x: hidden;
   background-color: var(--bg);
 }
+
+.react {
+  border: 2px solid rgb(8, 217, 255);
+}
+.react:hover {
+  background: rgb(8, 217, 255, 0.25);
+}
+
+.node {
+  border: 2px solid rgb(83, 158, 66);
+}
+.node:hover {
+  background: rgb(83, 158, 66, 0.25);
+}
+
+.sql {
+  border: 2px solid rgb(0, 121, 214);
+}
+.sql:hover {
+  background: rgb(0, 121, 214, 0.25);
+}
+
+.next {
+  border: 2px solid rgb(0, 112, 243);
+}
+.next:hover {
+  background: rgba(0, 112, 243, 0.25);
+}
+
+.tailwind {
+  border: 2px solid rgb(22, 190, 203);
+}
+.tailwind:hover {
+  background: rgb(22, 190, 203, 0.25);
+}
+
+.css {
+  border: 2px solid rgb(21, 114, 182);
+}
+.css:hover {
+  background: rgba(21, 114, 182, 0.25);
+}
+
+.html {
+  border: 2px solid rgb(228, 77, 38);
+}
+.html:hover {
+  background: rgb(228, 77, 38, 0.25);
+}
+
+.typescript {
+  border: 2px solid rgb(55, 124, 200);
+}
+.typescript:hover {
+  background: rgb(55, 124, 200, 0.25);
+}
+
+.python {
+  border: 2px solid rgb(255, 211, 66);
+}
+.python:hover {
+  background: rgb(255, 211, 66, 0.25);
+}
+
+.javascript {
+  border: 2px solid rgb(247, 224, 24);
+}
+.javascript:hover {
+  background: rgb(247, 224, 24, 0.25);
+}
+
+.php {
+  border: 2px solid rgb(137, 147, 190);
+}
+.php:hover {
+  background: rgb(137, 147, 190, 0.25);
+}
+
+.nestjs {
+  border: 2px solid rgb(224, 35, 78);
+}
+.nestjs:hover {
+  background: rgb(224, 35, 78, 0.25);
+}
+
+.sass {
+  border: 2px solid rgb(205, 103, 153);
+}
+.sass:hover {
+  background: rgb(205, 103, 153, 0.25);
+}
+
+.postgresql {
+  border: 2px solid rgb(50, 96, 146);
+}
+.postgresql:hover {
+  background: rgb(50, 96, 146, 0.25);
+}
+
+.bootstrap {
+  border: 2px solid rgb(137, 10, 252);
+}
+
+.bootstrap:hover {
+  background: rgb(137, 10, 252, 0.25);
+}
